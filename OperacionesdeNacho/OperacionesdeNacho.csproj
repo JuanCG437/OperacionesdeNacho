@@ -33,6 +33,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DividirNachoOpera">
+      <HintPath>..\DividirNachoOpera.dll</HintPath>
+    </Reference>
+    <Reference Include="MultiplicacionNachoOpera">
+      <HintPath>..\MultiplicacionNachoOpera.dll</HintPath>
+    </Reference>
+    <Reference Include="RestaNachoOpera">
+      <HintPath>..\RestaNachoOpera.dll</HintPath>
+    </Reference>
+    <Reference Include="sumaNachoOpera">
+      <HintPath>..\sumaNachoOpera.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />

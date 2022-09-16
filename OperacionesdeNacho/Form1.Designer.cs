@@ -36,7 +36,7 @@ namespace OperacionesdeNacho
             this.btnCrear = new System.Windows.Forms.Button();
             this.txtnum1 = new System.Windows.Forms.TextBox();
             this.txtnum2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtresultado = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -88,8 +88,9 @@ namespace OperacionesdeNacho
             this.btnCrear.Name = "btnCrear";
             this.btnCrear.Size = new System.Drawing.Size(75, 23);
             this.btnCrear.TabIndex = 4;
-            this.btnCrear.Text = "Crear";
+            this.btnCrear.Text = "Operar";
             this.btnCrear.UseVisualStyleBackColor = true;
+            this.btnCrear.Click += new System.EventHandler(this.btnCrear_Click);
             // 
             // txtnum1
             // 
@@ -105,12 +106,12 @@ namespace OperacionesdeNacho
             this.txtnum2.Size = new System.Drawing.Size(100, 20);
             this.txtnum2.TabIndex = 6;
             // 
-            // textBox3
+            // txtresultado
             // 
-            this.textBox3.Location = new System.Drawing.Point(57, 48);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(468, 20);
-            this.textBox3.TabIndex = 7;
+            this.txtresultado.Location = new System.Drawing.Point(57, 48);
+            this.txtresultado.Name = "txtresultado";
+            this.txtresultado.Size = new System.Drawing.Size(468, 20);
+            this.txtresultado.TabIndex = 7;
             // 
             // label1
             // 
@@ -147,7 +148,7 @@ namespace OperacionesdeNacho
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtresultado);
             this.Controls.Add(this.txtnum2);
             this.Controls.Add(this.txtnum1);
             this.Controls.Add(this.btnCrear);
@@ -171,7 +172,7 @@ namespace OperacionesdeNacho
         private System.Windows.Forms.Button btnCrear;
         private System.Windows.Forms.TextBox txtnum1;
         private System.Windows.Forms.TextBox txtnum2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtresultado;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
