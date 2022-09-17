@@ -39,14 +39,14 @@ namespace OperacionesdeNacho
                 }
                 if (rdbMultiplicar.Checked)
                 {
-                    double multRtdo;
+                    long multRtdo;
                     multRtdo = MultiplicacionNachoOpera.Class1.multiplicacion(long.Parse(txtnum1.Text), long.Parse(txtnum2.Text));
                     txtresultado.Text = multRtdo.ToString();
                 }
                 if (rdbDividir.Checked)
                 {
                     double DivRtdo;
-                    DivRtdo = DividirNachoOpera.Class1.Dividir(long.Parse(txtnum1.Text), long.Parse(txtnum2.Text));
+                    DivRtdo = DividirNachoOpera.Class1.Dividir(double.Parse(txtnum1.Text), double.Parse(txtnum2.Text));
                     txtresultado.Text = DivRtdo.ToString();
                 }
             }
